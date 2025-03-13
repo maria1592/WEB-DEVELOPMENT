@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Empleados</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: white;">
+
+    <h1 style="color: #333;">👥 Gestión de Empleados</h1>
+
+    <h2 style="color: #555;">➕ Registrar Nuevo Empleado</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" style="margin-right: 10px;">
+        
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" style="margin-right: 10px;">
+        
+        <input type="submit" value="Registrar" style="background-color: #28a745; color: white; border: none; padding: 5px 10px; cursor: pointer;">
+    </form>
+
+    <h2 style="color: #555; margin-top: 20px;">📋 Listado de Empleados</h2>
+
+    <table border="1" width="100%" style="border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr style="background-color: #333; color: white;">
+                <th style="padding: 8px;">#</th>
+                <th style="padding: 8px;">Nombre</th>
+                <th style="padding: 8px;">Cargo</th>
+                <th style="padding: 8px;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px;">1</td>
+                <td style="padding: 8px;">Juan Pérez</td>
+                <td style="padding: 8px;">Técnico de Redes</td>
+                <td style="padding: 8px;">
+                    <button style="background-color: #007bff; color: white; border: none; padding: 5px 10px; cursor: pointer;">✏ Editar</button>
+                    <button style="background-color: #dc3545; color: white; border: none; padding: 5px 10px; cursor: pointer;">🗑 Eliminar</button>
+                </td>
+            </tr>
+            <tr style="background-color: #f4f4f4;">
+                <td style="padding: 8px;">2</td>
+                <td style="padding: 8px;">María López</td>
+                <td style="padding: 8px;">Supervisora</td>
+                <td style="padding: 8px;">
+                    <button style="background-color: #007bff; color: white; border: none; padding: 5px 10px; cursor: pointer;">✏ Editar</button>
+                    <button style="background-color: #dc3545; color: white; border: none; padding: 5px 10px; cursor: pointer;">🗑 Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">3</td>
+                <td style="padding: 8px;">Carlos Rodríguez</td>
+                <td style="padding: 8px;">Ingeniero de Telecomunicaciones</td>
+                <td style="padding: 8px;">
+                    <button style="background-color: #007bff; color: white; border: none; padding: 5px 10px; cursor: pointer;">✏ Editar</button>
+                    <button style="background-color: #dc3545; color: white; border: none; padding: 5px 10px; cursor: pointer;">🗑 Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

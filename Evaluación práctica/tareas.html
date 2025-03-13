@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación de Tareas</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5;">
+
+    <h1 style="color: #333; text-align: center;">🛠️ Asignación de Tareas y Material</h1>
+
+    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <h2 style="color: #555;">Asignar Tarea a Empleado</h2>
+        <form action="#" method="POST">
+            <label for="empleado" style="font-weight: bold;">Empleado:</label>
+            <select id="empleado" name="empleado" style="width: 100%; padding: 8px; margin-bottom: 20px;">
+                <option value="juan">Juan Pérez</option>
+                <option value="maria">María López</option>
+                <option value="pedro">Pedro Gómez</option>
+            </select>
+
+            <label for="tarea" style="font-weight: bold;">Tarea/Servicio:</label>
+            <select id="tarea" name="tarea" style="width: 100%; padding: 8px; margin-bottom: 20px;">
+                <option value="instalacion">Instalación de antena</option>
+                <option value="revision">Revisión de fibra óptica</option>
+                <option value="mantenimiento">Mantenimiento de equipos</option>
+            </select>
+
+            <label for="material" style="font-weight: bold;">Material Asociado:</label>
+            <select id="material" name="material" style="width: 100%; padding: 8px; margin-bottom: 20px;">
+                <option value="cable">Cable coaxial 50m</option>
+                <option value="conectores">Conectores RJ45</option>
+                <option value="antena">Antena parabólica</option>
+            </select>
+
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Asignar Tarea</button>
+        </form>
+    </div>
+
+    <h2 style="color: #555;">Tareas Asignadas</h2>
+    <table border="1" width="100%" style="border-collapse: collapse; text-align: left; margin-bottom: 30px;">
+        <thead>
+            <tr style="background-color: #333; color: white;">
+                <th style="padding: 8px;">Empleado</th>
+                <th style="padding: 8px;">Tarea/Servicio</th>
+                <th style="padding: 8px;">Material Asignado</th>
+                <th style="padding: 8px;">Fecha Asignación</th>
+                <th style="padding: 8px;">Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px;">Juan Pérez</td>
+                <td style="padding: 8px;">Instalación de antena</td>
+                <td style="padding: 8px;">Cable coaxial 50m, Conectores RJ45</td>
+                <td style="padding: 8px;">2025-03-10</td>
+                <td style="padding: 8px; color: green;">✔ Completado</td>
+            </tr>
+            <tr style="background-color: #f4f4f4;">
+                <td style="padding: 8px;">María López</td>
+                <td style="padding: 8px;">Revisión de fibra óptica</td>
+                <td style="padding: 8px;">Antena parabólica</td>
+                <td style="padding: 8px;">2025-03-12</td>
+                <td style="padding: 8px; color: red;">❌ Pendiente</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px;">Pedro Gómez</td>
+                <td style="padding: 8px;">Mantenimiento de equipos</td>
+                <td style="padding: 8px;">Cable coaxial 30m, Conectores RJ45</td>
+                <td style="padding: 8px;">2025-03-11</td>
+                <td style="padding: 8px; color: orange;">🔄 En progreso</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
